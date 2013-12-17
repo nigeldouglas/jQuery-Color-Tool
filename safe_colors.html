@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web Color Picker</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/layout_styles.css" />
+
+<script language="javascript" type="text/javascript" src="images+logo/images/jscolor.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/jquery-1.9.1.js"></script>
+<script type='text/javascript' src='javascript/tinycolor.js'></script>
+<script type="text/javascript" charset="utf-8" src="loading_edgePreload.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/script.js"></script>
+
+<script type="text/javascript">
+	
+		$(window).load(function() { 
+			$("#preloader").delay(2500).fadeOut(1500); 
+		})
+	//]]>
+</script>
+
+</head>
+
+<body>
+	<div id="preloader">
+		<div id="Stage" class="EDGE-54450414"></div>
+	</div>
+    <div id="info"><img src="images+logo/images/info.png" /></div>
+	<div id="image"><img src="images+logo/logo/safecolorslogo04.png" /></div>
+	<div id="wrapper">
+    	<div id="main_body">
+        	<h1>HEX Values</h1>
+            <div id="HEX_val">
+                <p><label>Body:</label><input class="color" type="text" value="CCCCCC" id="color" /><span class="body_color"></span></p>
+                <p><label>BG:</label><input type="text" value="" id="bg_field" /></p>
+                <p><label>Head:</label><input type="text" value="" id="head_field" /></p>
+                <p><label>Foot:</label><input type="text" value="" id="foot_field" /></p>
+                <p><label>Left/Right:</label><input type="text" value="" id="lr_field" /></p>
+                <p><label>Menu:</label><input type="text" value="" id="menu_field" /></p>
+            </div>
+            <div id='combine-output'>
+            	<table>
+                   <!-- Triad -->
+                   <tr><td>Triad:</td> <td><div class='triad'></div></td></tr>
+                   <!-- Tetrad -->
+                   <tr><td>Tetrad:</td> <td><div class='tetrad'></div></td></tr>
+                   <!-- Monochromatic -->
+                   <tr><td>Monochromatic:</td> <td><div class='mono'></div></td></tr>
+                   <!-- Analagous -->
+                   <tr><td>Analogous:</td> <td><div class='analogous'></div></td></tr>
+                   <!-- Complementary -->
+                   <tr><td>Complementary:</td> <td><div class='sc'></div></td></tr>
+            	</table>
+    		</div>
+        </div>
+        <div id="sample">
+        	<ul id="sample_styles">
+                <li id="lo1" class="selected_layout">Layout 1</li>
+                <li id="lo2">Layout 2</li>
+                <li id="lo3">Layout 3</li>
+                <li id="lo4">Layout 4</li>
+                <li id="lo5">Layout 5</li>
+            </ul>
+            <div id="background_body">
+            	<div id="default_wrapper">
+                    <div id="default_left_column">
+                    	<img src="images/your_logo.png" />
+                        <p class="menu_item">menu item_1</p>
+                        <p class="menu_item">menu item_2</p>
+                        <p class="menu_item">menu item_3</p>
+                        <p class="menu_item">menu item_4</p>
+                        <p class="menu_item">menu item_5</p>
+                    </div>
+                    <div id="default_main_column">
+                    	<h1>Title of Page</h1>
+                    	<h1 id="default_h">Main Body</h1>
+                        <p>Safe Colors is a webtool that allows you to find the colors that will suit your website.</p>
+                        <p>All You have to do is:</p>
+                        <p>1) Pick a color that you like.</p>
+                        <p>2) We will then calculate the colors that suit the page.</p>
+                        <p>3) If unsure use our page layouts for comparison.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
